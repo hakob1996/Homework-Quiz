@@ -1,0 +1,58 @@
+.container{
+    
+    margin-top:50px;
+}
+
+#quizPart{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#mainText{
+    font-size: 20px;
+    padding:50px 15px 25px 15px;
+}
+#startbtn{
+    background-color: #7419A8;
+    border-radius: 10px;
+    color:white;
+    font-size: 15px;
+    padding:5px 15px 5px 15px;
+}
+
+.labels{
+    width: 100%;
+    height: 25px;
+    border: solid 1px black;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#quizContainer{
+    display: none;
+    text-align: center;
+    margin-top:50px;
+    padding-top: 50px;
+    margin: auto;
+
+}
+.li{
+    
+    background-color: aliceblue;
+    font-size: 30px;
+    padding: 3px;
+}
+
+#answerOutput{
+    text-align: center;
+    font-size: 30px;
+
+}
+#lastPage{
+    display: none;
+    text-align: center;
+    margin-top:50px;
+    padding-top: 50px;
+    margin: auto;
+}
