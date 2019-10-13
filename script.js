@@ -15,7 +15,8 @@ var audioElement = document.createElement("audio");
 audioElement.setAttribute("src", "images/correct.mp3");
 var audioElementWrong = document.createElement("audio");
 audioElementWrong.setAttribute("src", "images/wrong.mp3");
-
+var tryAgain = document.querySelector("#tryAgain");
+var tryAgainBtn = document.querySelector("#tryAgainBtn");
 var count = 0;
 
 
@@ -99,17 +100,20 @@ $(document).on('click', '.choiceItem',function(){
 
 function renderQuestionObj(i){
   var choices = questions[i].choices;
-  var correctAnswer = questions[i].Correct
+  
 
   $(quizContainer).prepend(questions[i].title);
   renderChoices(choices)
+  //last page with score
   if(count >= 4){
     lastPage.style.display = "block";
+    tryAgain.style.display = "block";
     quizContainer.style.display = "none";
     answerOutput.style.display = "none";
     lastPage.innerHTML= "Your " + $(scorePart).text() + " "+ "is " +  secondsLeft;
-    timer.style.display = "none";
-    scorePart.style.display = "none";
+     timer.style.display = "none";
+     //scorePart.style.display = "none";
+     
   
     
 
@@ -125,7 +129,7 @@ function renderQuestionObj(i){
 
 
     
-//last page with score
+
 
 
 
@@ -159,7 +163,12 @@ function setTime() {
    });
 
    
+tryAgain.addEventListener("click", function(){
 
+  location.reload();
+
+
+} );
 
 
 

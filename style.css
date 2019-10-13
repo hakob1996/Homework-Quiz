@@ -19,15 +19,18 @@
     font-size: 15px;
     padding:5px 15px 5px 15px;
 }
-
-.labels{
-    width: 100%;
-    height: 25px;
-    border: solid 1px black;
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+#tryAgainBtn{
+    background-color: #7419A8;
+    border-radius: 10px;
+    color:white;
+    font-size: 15px;
+    padding:5px 15px 5px 15px;
+   
 }
+#tryAgain{
+   display: none;
+}
+
 
 #quizContainer{
     display: none;
@@ -37,12 +40,7 @@
     margin: auto;
 
 }
-.li{
-    
-    background-color: aliceblue;
-    font-size: 30px;
-    padding: 3px;
-}
+
 
 #answerOutput{
     text-align: center;
@@ -56,3 +54,21 @@
     padding-top: 50px;
     margin: auto;
 }
+
+.choiceItem{
+    background-color: #7419A8;
+    color: white;
+    font-size: 20px;
+    margin: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    
+}
+ #quizContainer{
+     font-size: 30px;
+ }
+
+ #lastPage{
+     font-size: 40px;
+ }
